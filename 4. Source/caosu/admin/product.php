@@ -1,0 +1,21 @@
+<?php
+	require_once("controllers/c_san_pham.php");
+	$c_san_pham = new C_san_pham();
+	if(isset($_GET['edit']))
+	{
+		$c_san_pham->Hien_thi_ct_san_pham();	
+	}
+	if(isset($_POST['btnCapNhatSP']))
+	{
+		$c_san_pham->Sua_san_pham();
+	}
+	if(isset($_POST['btnThemSP']))
+	{
+		$c_san_pham->Hien_thi_them_san_pham();
+	}
+	if(isset($_POST['btnAddSP']))
+	{
+		$c_san_pham->Hien_thi_them_san_pham();	
+	}
+	$c_san_pham->Hien_thi_san_pham();
+?>

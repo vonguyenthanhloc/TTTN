@@ -1,0 +1,8 @@
+#([0-9]+)
+#([a-zA-Z0-9-_]+)
+
+RewriteEngine On
+
+ErrorDocument 404 /DemoDA/404.php
+ErrorDocument 403 /DemoDA/403.php
+ErrorDocument 500 /DemoDA/500.php
